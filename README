@@ -1,0 +1,53 @@
+README
+https://github.com/felix1737397/projet_web_3
+
+Lien github
+
+Procédure d'installation de l'API : 
+
+Installation de Dart sur la machine
+
+Ouverture d'une console dans le projet --> dart pub get 
+
+Le rouler avec visual studio 
+
+Type de base de donnée : MongoDB 
+
+Création de la BD --> copier le JSON des collections sur mongoDB respectivement dans les collections
+
+- livre
+
+-auteur
+
+-user
+
+
+
+lien du front-end : http://projet-web3.herokuapp.com/#/
+
+lien du back-end: https://api-web3.herokuapp.com/
+
+
+
+PROCÉDURE installation frontEnd 
+
+cloner le projet --> installation de dart et des extensions vscode de flutter
+Name: Flutter
+Id: Dart-Code.flutter
+Description: Flutter support and debugger for Visual Studio Code.
+Version: 3.56.0
+Publisher: Dart Code
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter
+
+
+faire un flutter pub get dans la console
+
+
+
+choisir Chrome comme émulateur --> rouler avec Vscode
+
+
+
+
+
+Application publiée --> bibliothèque permettant de créer des auteurs et des livres. Permet d'ajouter des livres à sa bibliothèque virtuelle. CRUD sur les livres, uniquemnet le GET sur les auteurs pour le front end (les méthodes sont codés dans le backend) 
