@@ -1,0 +1,155 @@
+//JSON de la BD
+
+
+//COLLECTION livre 
+[
+	{
+		"id": "63a538b0ab8a03dc6c1edb20",
+		"isbn": null,
+		"titre": "Harry Potter ",
+		"auteur_id": "63a53863ab8a03dc6c1edb1f",
+		"langage": "fr",
+		"description": "lorem ipsum",
+		"image": "https://m.media-amazon.com/images/I/51ibfs0eF8L._SX498_BO1,204,203,200_.jpg",
+		"nb_pages": 325,
+		"categorie": "fantastique",
+		"editeur": "Gallimard",
+		"date_publication": 881211600000
+	},
+	{
+		"id": "63a538edab8a03dc6c1edb21",
+		"isbn": null,
+		"titre": "Harry Potter 2",
+		"auteur_id": "63a53863ab8a03dc6c1edb1f",
+		"langage": "en",
+		"description": "Le jour de ses onze ans, Harry Potter, un orphelin élevé par un oncle et une tante qui le détestent, voit son existence bouleversée. Un géant vient le chercher pour l'emmener à Poudlard, une école de sorcellerie ! Voler en balai, jeter des sorts, combattre les trolls : Harry se révèle un sorcier doué. Mais un mystère entoure sa naissance et l'effroyable V., le mage dont personne n'ose prononcer le nom.\n",
+		"image": "https://m.media-amazon.com/images/I/41o+Dk8N2fS._SX332_BO1,204,203,200_.jpg",
+		"nb_pages": 4550,
+		"categorie": "fantastique",
+		"editeur": "Gallimard",
+		"date_publication": 1669870800000
+	},
+	{
+		"id": "63a53915ab8a03dc6c1edb23",
+		"isbn": null,
+		"titre": "Harry potter 3",
+		"auteur_id": "63a53863ab8a03dc6c1edb1f",
+		"langage": "fr",
+		"description": "Le jour de ses onze ans, Harry Potter, un orphelin élevé par un oncle et une tante qui le détestent, voit son existence bouleversée. Un géant vient le chercher pour l'emmener à Poudlard, une école de sorcellerie ! Voler en balai, jeter des sorts, combattre les trolls : Harry se révèle un sorcier doué. Mais un mystère entoure sa naissance et l'effroyable V., le mage dont personne n'ose prononcer le nom.\n",
+		"image": "https://m.media-amazon.com/images/I/41o+Dk8N2fS._SX332_BO1,204,203,200_.jpg",
+		"nb_pages": 450,
+		"categorie": "fantastique",
+		"editeur": "Gallimard",
+		"date_publication": 1672462800000
+	},
+	{
+		"id": "63a5392dab8a03dc6c1edb24",
+		"isbn": null,
+		"titre": "Harry potter 4",
+		"auteur_id": null,
+		"langage": "fr",
+		"description": "https://m.media-amazon.com/images/I/41o+Dk8N2fS._SX332_BO1,204,203,200_.jpg",
+		"image": "https://m.media-amazon.com/images/I/41o+Dk8N2fS._SX332_BO1,204,203,200_.jpg",
+		"nb_pages": 550,
+		"categorie": "fantastique",
+		"editeur": "Gallimard",
+		"date_publication": 1418187600000
+	}
+]
+
+
+
+
+
+
+
+
+// JSON AUTEURs
+
+
+[
+	{
+		"id": "63a4c42c4821cc262b3d4cf9",
+		"nom": "felix",
+		"prenom": "michaud"
+	},
+	{
+		"id": "63a4c4554821cc262b3d4cfa",
+		"nom": "monsieur",
+		"prenom": "banane"
+	},
+	{
+		"id": "63a4e866aec7db634ee08b5d",
+		"nom": "jean-guy",
+		"prenom": "Roar"
+	},
+	{
+		"id": "63a4e9f3aec7db634ee08b5e",
+		"nom": "mathieu",
+		"prenom": "bonsoir"
+	},
+	{
+		"id": "63a4ee37aec7db634ee08b62",
+		"nom": null,
+		"prenom": null
+	},
+	{
+		"id": "63a4ee41aec7db634ee08b63",
+		"nom": null,
+		"prenom": null
+	},
+	{
+		"id": "63a4ee46aec7db634ee08b64",
+		"nom": null,
+		"prenom": null
+	},
+	{
+		"id": "63a4ee7daec7db634ee08b65",
+		"nom": null,
+		"prenom": null
+	},
+	{
+		"id": "63a4eedbaec7db634ee08b66",
+		"nom": null,
+		"prenom": null
+	},
+	{
+		"id": "63a4f6ebaec7db634ee08b68",
+		"nom": "aa",
+		"prenom": "aa"
+	},
+	{
+		"id": "63a4f793aec7db634ee08b69",
+		"nom": "sa",
+		"prenom": "sa"
+	},
+	{
+		"id": "63a4f947a1031cd3b232e6a5",
+		"nom": "sa",
+		"prenom": "sa"
+	},
+	{
+		"id": "63a53863ab8a03dc6c1edb1f",
+		"nom": "Rowling",
+		"prenom": "J.K."
+	}
+]
+
+
+
+JSON USER 
+[
+	{
+	"username":"felix",
+	"mot_de_passe": "allo",
+	"permission":"admin"
+	}
+	
+	{
+	"username":"Carine",
+	"mot_de_passe": "allo",
+	"permission":"user"
+	}
+]
+
+
