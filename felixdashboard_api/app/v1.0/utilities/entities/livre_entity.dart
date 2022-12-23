@@ -2,6 +2,8 @@ import 'dart:convert';
 
 import 'package:mongo_dart/mongo_dart.dart';
 
+import 'validator_entity.dart';
+
 class Livre {
   String? id;
   String? isbn;
@@ -73,14 +75,17 @@ class Livre {
   }
 
   factory Livre.fromMap(Map<String, dynamic> map) {
+    var validator = ISBNValidator();
     return Livre(
       id: map['_id'] is ObjectId
           ? map['_id'].toHexString()
           : map['_id'].toString(),
-      isbn: map['isbn'] != null ? map['isbn'].toString() : null,
+      isbn: map['isbn'] != null && validator.isValidISBN(map['isbn'])
+          ? map['isbn'].toString()
+          : null,
       titre: map['titre'],
       auteurId: map['auteur_id'] != null ? map['auteur_id'].toString() : null,
-      langage: map['langage'] != null ? map['langage'].toString() : null,
+      langage: map['langage'] != null ? map['langage'].toString() : "fr",
       description:
           map['description'] != null ? map['description'].toString() : null,
       image: map['image'] != null ? map['image'].toString() : null,

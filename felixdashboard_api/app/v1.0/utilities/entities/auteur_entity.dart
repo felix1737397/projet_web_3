@@ -4,22 +4,33 @@ import 'package:mongo_dart/mongo_dart.dart';
 
 class Auteur {
   String? id;
-
+  String? nom;
+  String? prenom;
+  //getter for nom + prenom
+  String get nomComplet => '$nom $prenom';
   Auteur({
     this.id,
+    this.nom,
+    this.prenom,
   });
 
   Auteur copyWith({
     String? id,
+    String? nom,
+    String? prenom,
   }) {
     return Auteur(
       id: id ?? this.id,
+      nom: nom ?? this.nom,
+      prenom: prenom ?? this.prenom,
     );
   }
 
   Map<String, dynamic> toMap({bool withId = true}) {
     return {
       if (withId) 'id': id,
+      'nom': nom,
+      'prenom': prenom,
     };
   }
 
@@ -28,6 +39,8 @@ class Auteur {
       id: map['_id'] is ObjectId
           ? map['_id'].toHexString()
           : map['_id'].toString(),
+      nom: map['nom'],
+      prenom: map['prenom'],
     );
   }
 

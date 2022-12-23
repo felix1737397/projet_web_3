@@ -1,10 +1,10 @@
 import '../entities/livre_entity.dart';
 import '../services/livre.service.dart';
-import '../services/test.service.dart';
+import '../services/auteur.service.dart';
 
 class LivreController {
-  static Future<List<Livre>> getData() async {
-    return await LivreService.getData();
+  static Future<List<Livre>> getData(bool fr, bool en, bool under500) async {
+    return await LivreService.getData(fr, en, under500);
   }
 
   static Future<Livre> postData(Livre livre) async {
@@ -15,8 +15,12 @@ class LivreController {
     return await LivreService.patchData(livre, id);
   }
 
-  static Future<String> deleteData(String id) async {
+  static Future<bool> deleteData(String id) async {
     var data = await LivreService.deleteData(id);
-    return data.toString();
+    return data;
+  }
+
+  static Future<int> getNombreLivres() async {
+    return await LivreService.getNombreLivres();
   }
 }

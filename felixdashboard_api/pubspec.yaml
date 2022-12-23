@@ -22,3 +22,7 @@ dependencies:
 
 dev_dependencies:
   lints: ^1.0.0
+  build_runner: ^2.1.7
+  chopper_generator: ^4.0.5
+  json_serializable: ^6.1.4
+  swagger_dart_code_generator: ^2.4.6

@@ -1,20 +1,17 @@
 import 'package:alfred/alfred.dart';
 
 import 'routes/livre.dart';
-import 'routes/test.dart';
+import 'routes/auteur.dart';
+import 'routes/user.dart';
 
 class V1Router {
   V1Router(NestedRoute app) {
-    var admin = app.route('/admin', middleware: []);
-    var users = app.route('/users', middleware: []);
-    var openweather = app.route("/openweather", middleware: []);
-    var test = app.route('/test', middleware: []);
+    var users = app.route('/user', middleware: []);
+    var auteur = app.route('/auteur', middleware: []);
     var livre = app.route('/livre', middleware: []);
 
-    TestRouter(test);
+    AuteurRouter(auteur);
     LivreRouter(livre);
-    // AdminRouter(admin);
-    // UsersRouter(users);
-    // OpenWeatherRouter(openweather);
+    UserRouter(users);
   }
 }
